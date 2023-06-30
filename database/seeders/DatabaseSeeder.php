@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Country;
+use App\Models\Product;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -29,5 +30,8 @@ class DatabaseSeeder extends Seeder
                 });
 
         }
+
+        Product::factory(100)->create();
+
     }
 }
